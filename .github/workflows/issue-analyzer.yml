@@ -56,7 +56,7 @@ jobs:
       - name: Check out repository
         uses: actions/checkout@v3.0.2
       - name: Set up Node.js
-        uses: actions/setup-node@v3.5.1
+        uses: actions/setup-node@v3.6.0
         with:
           node-version: latest
       - name: Install dependencies
@@ -84,7 +84,7 @@ jobs:
           name: issue-files
           path: '.'
       - name: Set up Node.js
-        uses: actions/setup-node@v3.5.1
+        uses: actions/setup-node@v3.6.0
         with:
           node-version: ${{ env.NODE_VERSION }}
       - name: Enable corepack
